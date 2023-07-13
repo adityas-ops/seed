@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Hero from "@/components/Hero";
 import Card1 from "@/components/Card1";
+import Marquee from "@/components/Marque";
 
 const inter = Inter({ subsets: ["latin"] });
 //  ${inter.className}
@@ -43,13 +44,36 @@ export default function Home() {
         </div>
       </section>
       <section className="py-[40px]">
-      <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
-        <h2 className=" text-center mb-[32px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">What you get from SeedToScale</h2>
-          <Card1/>
-      </div>
+        <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+          <h2 className=" text-center mb-[32px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">
+            What you get from SeedToScale
+          </h2>
+          <Card1 />
+        </div>
       </section>
-      <section className="py-[60px] bg-[#e8f5f4] mb-[40px] bg-no-repeat ">
-
+      <section className="py-[60px] bg-[#e8f5f4] mb-[40px] bg-no-repeat bg-back1 bg-right-top ">
+        <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+          <div className="w-full h-full grid md:grid-cols-2 grid-cols-1">
+            <div>
+              <h2 className=" text-left mb-[4px] md:text-[2rem] text-[1.5rem] font-dm font-[400] text-[#200051]">
+                Curated By Accel
+              </h2>
+              <p className=" md:text-[1.125rem] text-[14px] leading-[1.5] text-[#200051] font-inter ">
+                At Accel, we have backed{" "}
+                <span class="text-[#f0485c]">150+ portfolio companies</span>{" "}
+                from their seed stage and travelled with them to scale. We are
+                bringing these learnings back to the startup ecosystem through
+                SeedToScale.
+              </p>
+            </div>
+            <div className="lg:w-[630px] w-full px-4 md:px-0 mt-10 md:mt-0 overflow-hidden flex justify-start relative">
+              <Marquee />
+              <div className=" bg-fade-left top-0 bottom-auto right-auto left-[0%] md:w-[140px] w-[70px] h-full absolute"/>
+              <div className=" bg-fade-right top-0 bottom-auto right-[0%] left-auto md:w-[140px] w-[70px] h-full absolute"/>
+            </div>
+            
+          </div>
+        </div>
       </section>
     </div>
   );
