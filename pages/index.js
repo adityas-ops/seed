@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Hero from "@/components/Hero";
 import Card1 from "@/components/Card1";
 import Marquee from "@/components/Marque";
+import Stat from "@/components/Stat";
+import Carosuel from "@/components/Carosuel";
 
 const inter = Inter({ subsets: ["latin"] });
 //  ${inter.className}
@@ -66,14 +68,24 @@ export default function Home() {
                 SeedToScale.
               </p>
             </div>
-            <div className="lg:w-[630px] w-full px-4 md:px-0 mt-10 md:mt-0 overflow-hidden flex justify-start relative">
+            <div className=" w-full px-4 md:px-0 mt-10 md:mt-0 overflow-hidden flex justify-start relative">
               <Marquee />
-              <div className=" bg-fade-left top-0 bottom-auto right-auto left-[0%] md:w-[140px] w-[70px] h-full absolute"/>
-              <div className=" bg-fade-right top-0 bottom-auto right-[0%] left-auto md:w-[140px] w-[70px] h-full absolute"/>
+              <div className=" bg-fade-left top-0 bottom-auto right-auto left-[0%] md:w-[140px] w-[70px] h-full absolute" />
+              <div className=" bg-fade-right top-0 bottom-auto right-[0%] left-auto md:w-[140px] w-[70px] h-full absolute" />
             </div>
-            
           </div>
         </div>
+      </section>
+      <section className="md:py-[40px] py-0 w-full h-full">
+        <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+          <Stat/>
+        </div>
+      </section>
+      <section className="py-[40px] w-full h-full">
+      <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+      <h2 className=" text-center mb-[2rem] relative  text-[2em] font-dm font-[400]  text-[#200051]">Success Stories from our Community</h2>
+      <Carosuel/>
+      </div>
       </section>
     </div>
   );

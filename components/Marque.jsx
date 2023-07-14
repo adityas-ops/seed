@@ -26,7 +26,7 @@ const images2 = images.slice(7,images.length)
 
 function Marque() {
   return (
-   <div className='flex flex-col'>
+   <div className='flex flex-col w-full h-full overflow-hidden'>
      <div className=" flex justify-evenly items-center">
       <Marquee velocity={25}>
         {images1.map((image, i) => (
