@@ -78,14 +78,26 @@ export default function Home() {
       </section>
       <section className="md:py-[40px] py-0 w-full h-full">
         <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
-          <Stat/>
+          <Stat />
         </div>
       </section>
       <section className="py-[40px] w-full h-full">
-      <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
-      <h2 className=" text-center mb-[2rem] relative  text-[2em] font-dm font-[400]  text-[#200051]">Success Stories from our Community</h2>
-      <Carosuel/>
-      </div>
+        <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+          <h2 className=" text-center mb-[2rem] relative  text-[2em] font-dm font-[400]  text-[#200051]">
+            Success Stories from our Community
+          </h2>
+          <Carosuel />
+        </div>
+      </section>
+      <section className="py-[40px] w-full h-full">
+        <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+        <h2 className=" text-center mb-[8px] relative  text-[2em] font-dm font-[400]  text-[#200051]">
+            Content Hub
+          </h2>
+          <div className=" font-inter text-[1rem] text-center text-[#200051] leading-[1.3]">
+          Over <span className="text-[#f0485c]">200+ hours</span>  of deep insights with context to read, listen, and view
+          </div>
+        </div>
       </section>
     </div>
   );
