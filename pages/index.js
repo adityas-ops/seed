@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Content, Inter } from "next/font/google";
 import Hero from "@/components/Hero";
 import Card1 from "@/components/Card1";
 import Marquee from "@/components/Marque";
 import Stat from "@/components/Stat";
 import Carosuel from "@/components/Carosuel";
+import ContentHub from "@/components/contentHub/ContentHub";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 //  ${inter.className}
@@ -83,7 +85,7 @@ export default function Home() {
       </section>
       <section className="py-[40px] w-full h-full">
         <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
-          <h2 className=" text-center mb-[2rem] relative  text-[2em] font-dm font-[400]  text-[#200051]">
+          <h2 className=" text-center mb-[2rem] relative  md:text-[2em] text-[1.5rem] font-dm font-[400]  text-[#200051]">
             Success Stories from our Community
           </h2>
           <Carosuel />
@@ -91,11 +93,25 @@ export default function Home() {
       </section>
       <section className="py-[40px] w-full h-full">
         <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
-        <h2 className=" text-center mb-[8px] relative  text-[2em] font-dm font-[400]  text-[#200051]">
+        <h2 className=" text-center mb-[8px] relative  md:text-[2em] text-[1.5rem] font-dm font-[400]  text-[#200051]">
             Content Hub
           </h2>
-          <div className=" font-inter text-[1rem] text-center text-[#200051] leading-[1.3]">
+          <div className=" font-inter md:text-[1rem] text-[0.75rem] text-center text-[#200051] leading-[1.3]">
           Over <span className="text-[#f0485c]">200+ hours</span>  of deep insights with context to read, listen, and view
+          </div>
+          <ContentHub/>
+          <div className=" mt-[2rem] mb-[8px] flex justify-center">
+            <Link
+            className="h-[52px] w-auto text-[#511e9f] flex items-center "
+            href='#'
+            >
+                view Our Youtube channel
+                <img 
+                src="https://assets-global.website-files.com/606cae0c4e05dcef785b0481/606cae0c4e05dc84ec5b04be_arrow-purple.svg"
+                className="w-[13px] h-[13px] ml-2"
+                alt="as"
+                />
+            </Link>
           </div>
         </div>
       </section>

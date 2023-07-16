@@ -65,3 +65,54 @@
 .offer-card:hover .heading{
   color: white;
 }
+
+.buttonG{
+  height: 56px;
+    min-width: 150px;
+    color: #828282;
+    text-align: center;
+    background-color: rgba(221,221,221,0);
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: color .2s;
+    display: flex;
+}
+
+.active{
+  color: #511e9f;
+    background-color: rgba(255,255,255,.1);
+    border-bottom-width: 4px;
+    border-bottom-color: #511e9f;
+    /* padding-top: 13px; */
+}
+
+.cardImgage{
+  background-image: url('https://assets-global.website-files.com/606cae0c4e05dcef785b0481/606cae0c4e05dc0eaf5b05d9_content-card-bg.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 991px){
+  .buttonG {
+    height: 30px;
+    min-width: auto;
+    border-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 9px 24px;
+    font-size: .875em;
+}
+.active{
+  background-color:#511e9f;
+  border-style: none;
+  color: white;
+}
+
+}
