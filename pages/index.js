@@ -8,6 +8,7 @@ import Carosuel from "@/components/Carosuel";
 import ContentHub from "@/components/contentHub/ContentHub";
 import Link from "next/link";
 import TopContent from "@/components/TopContent";
+import Funding from "@/components/Funding";
 
 const inter = Inter({ subsets: ["latin"] });
 //  ${inter.className}
@@ -121,23 +122,32 @@ export default function Home() {
           <h2 className=" text-center mb-[8px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">
           Top Video Content from SeedToScale
           </h2>
-          <div className=" font-inter font-[1rem]  text-[#200051]  text-center">
+          <div className=" font-inter font-[1rem] mb-[8px]  text-[#200051]  text-center">
           Most watched content by SeedToScale
           </div>
           <TopContent/>
           </div>
       </section>
-      <section className="md:pt-[90px] pb-[40px] w-full h-full  relative  bg-courses">
+      <section className="md:pt-[90px] pt-[45px] pb-[40px] w-full h-full  relative  bg-courses">
          <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
-         <h2 className=" w-[60%] mx-auto  mb-[32px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">
+         <h2 className=" md:w-[60%] w-full text-center mx-auto  mb-[32px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">
          Funding & learning courses to help you accelerate
           </h2>
+          <Funding/>
       </div>
       <img
         src="https://assets-global.website-files.com/606cae0c4e05dcef785b0481/606cae0c4e05dc06685b05d0_purple-gradient-circle.svg"
         alt="as"
         className=" absolute top-0 left-0 bottom-auto right-auto"
         />
+      </section>
+      <section className="md:py-[40px] py-0 w-full h-full">
+      <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4">
+         <h2 className=" md:w-[60%] w-full text-center mx-auto  mb-[32px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">
+         Upcoming Events
+         </h2>
+         </div>
+
       </section>
     </div>
   );
