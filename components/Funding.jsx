@@ -72,8 +72,8 @@ function Funding() {
           </div>
         </div>
       </div>
-      <div className="carding-2 min-w-[80vw] md:min-w-0">
-        <div className="flex justify-start flex-col relative">
+      <div className="carding-2 min-w-[80vw] md:min-w-0 relative">
+        <div className="flex justify-start flex-col ">
           <div className="w-full h-full flex justify-start">
             <img
               src="https://assets-global.website-files.com/606cae0c4e05dcef785b0481/606cae0c4e05dcccd25b0503_SAAS.svg"
@@ -87,7 +87,7 @@ function Funding() {
           <div className=" uppercase bg-[#faf6ff] rounded-[2px] mb-[8px] py-[4px] px-[8px] text-[12px] w-fit">
             Course
           </div>
-          <div className=" flex flex-col mb-[1.5rem]">
+          <div className=" flex flex-col mb-[1.5rem] min-h-[150px]">
             <p className="mb-[12px] leading-[1.5] text-[.825rem] ">
             A self paced course on how to build a SaaS Startup. The modules are focused on helping you discover
             </p>
@@ -96,7 +96,7 @@ function Funding() {
             <div className="tick">Cross Border Sales</div>
             <div className="tick">Fundraising </div>
           </div>
-          <div className=" flex items-center self-stretch justify-between">
+          <div className=" flex items-center self-stretch justify-between ">
             <div className=" text-[#200051] font-[600] text-[0.825rem]">
               Start Learning
             </div>
