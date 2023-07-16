@@ -24,7 +24,7 @@
     display: grid;
     position: relative;
     overflow: hidden;
-    height: 240px;
+    height: 210px;
     -webkit-transition: box-shadow .35s,color .35s,background-color .35s ,height 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     -moz-transition: box-shadow .35s,color .35s,background-color .35s ,height 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     -ms-transition: box-shadow .35s,color .35s,background-color .35s ,height 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -107,6 +107,7 @@
     margin-right: 0;
     padding: 9px 24px;
     font-size: .875em;
+    white-space: nowrap;
 }
 .active{
   background-color:#511e9f;
