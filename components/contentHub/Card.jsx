@@ -14,7 +14,7 @@ function Card({item}) {
             <img
               src={item.img2}
               alt="logo"
-              className="mr-[4px] max-w-[100%]"
+              className="mr-[4px] w-[16px] max-w-[100%]"
             />
             <div className=" uppercase  text-white text-[.75rem] ">{item.role}</div>
           </div>

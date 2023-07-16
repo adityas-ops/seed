@@ -8,7 +8,7 @@ const ItemIndicator = ({ items }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentItemIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [items.length]);
