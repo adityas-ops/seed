@@ -4,7 +4,7 @@ import React from "react";
 function Funding() {
   return (
     <div className="w-full h-full md:grid flex flex-row overflow-x-scroll md:grid-cols-3 grid-cols-1  gap-0 gap-x-[24px] gap-y-[40px]">
-      <div className="carding-1 z-30 min-w-[80vw] md:min-w-0 h-fit">
+      <div className="carding-1 z-30 min-w-[80vw] md:min-w-0 ">
         <div className="flex justify-start flex-col relative">
           <img
             src="https://assets-global.website-files.com/606cae0c4e05dcef785b0481/6169465bddfe0ac67c4ff72d_logo%201.svg"
@@ -30,7 +30,7 @@ function Funding() {
           Apply Now
         </Link>
       </div>
-      <div className="carding-2 min-w-[80vw] md:min-w-0 h-fit">
+      <div className="carding-2 min-w-[80vw] md:min-w-0 ">
         <div className="flex justify-start flex-col relative">
           <div className="w-full h-full flex justify-start">
             <img
@@ -72,7 +72,7 @@ function Funding() {
           </div>
         </div>
       </div>
-      <div className="carding-2 min-w-[80vw] md:min-w-0 h-fit">
+      <div className="carding-2 min-w-[80vw] md:min-w-0">
         <div className="flex justify-start flex-col relative">
           <div className="w-full h-full flex justify-start">
             <img
@@ -82,7 +82,7 @@ function Funding() {
             />
           </div>
           <h2 className=" text-[1.125rem] font-[600] font-inter mb-[8px] text-[#35087a]">
-          SeedToScale Startup School - SaaS
+          SeedToScale Startup School - SaaS 
           </h2>
           <div className=" uppercase bg-[#faf6ff] rounded-[2px] mb-[8px] py-[4px] px-[8px] text-[12px] w-fit">
             Course

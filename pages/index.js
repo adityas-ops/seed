@@ -9,6 +9,8 @@ import ContentHub from "@/components/contentHub/ContentHub";
 import Link from "next/link";
 import TopContent from "@/components/TopContent";
 import Funding from "@/components/Funding";
+import Events from "@/components/Events";
+import Last from "@/components/Last";
 
 const inter = Inter({ subsets: ["latin"] });
 //  ${inter.className}
@@ -146,8 +148,50 @@ export default function Home() {
          <h2 className=" md:w-[60%] w-full text-center mx-auto  mb-[32px] md:text-[2rem] text-[1.5rem] font-dm font-[400]">
          Upcoming Events
          </h2>
+         <Events/>
          </div>
+      </section>
+      <section  className="min-h-[80vh] bg-[#e8f5f4] md:pt-[100px] pt-[40px] pb-[40px] flex justify-between items-center">
+      <div className="w-full max-w-[1240px] mx-auto md:px-[20px] px-4 flex  relative">
+        <div className=" w-[40%] flex flex-col items-start">
+          <div className=" uppercase text-[#15948e] text-left mb-[12px] text-[0.875em] font-[700] font-inter">
+            Testimonials
+          </div>
+          <h2 className=" text-left mb-[12px] text-[2rem] font-dm font-[400] leading-[1.5] ">
+          Trusted by thousands
+          <br/>
+          of entrepreneurs 
+          <br/>
+          across the globe
+          </h2>
+          <p className=" text-[1em] leading-[1.7] text-[#200051] font-inter">
+          Since itacross the globes launch SeedToScale has received tons of love from startup founders and entrepreneurs from around the globe looking to buy or sell a startup without any of the traditional hassles.
+          </p>
+          <Link
+          href="#"
+          className=" text-[14px] text-center mt-[1.5rem] min-w-[168px] bg-[#511e9f] text-white rounded-[8px] py-[12px] px-[29px] flex items-center justify-center"
+          >
+            Read all 
+            <img 
+            src="https://assets-global.website-files.com/606cae0c4e05dcef785b0481/606cae0c4e05dc15645b04aa_arrow-white.svg"
+            alt="as"
+            className="w-[13px] ml-[1rem]"
+            />
+          </Link>
+        </div>
+        {/*  */}
+        <div className="w-[50%] h-full absolute  top-0 bottom-0 left-auto right-0 overflow-hidden ">
 
+        </div>
+      </div>
+      </section>
+
+
+
+      <section className="md:py-[40px] py-0 w-full h-full">
+      <div className="w-full max-w-[1240px] mx-auto md:px-[20px]  px-4">
+        <Last/>
+      </div>
       </section>
     </div>
   );
