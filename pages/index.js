@@ -166,7 +166,7 @@ export default function Home() {
          </div>
       </section>
       <section  className="min-h-[80vh] bg-[#e8f5f4] md:pt-[100px] pt-[40px] pb-[40px] flex relative justify-between items-center">
-     {/* <Testimoinals/> */}
+     <Testimoinals/>
       </section>
 
 
